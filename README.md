@@ -13,7 +13,7 @@ GenerateMotorCommands(), BodyRateControl(), and RollPitchControl() are developed
 LateralPositionControl(), AltitudeControl(), YawControl() are developed and a bunch of parameters are tuned for this.
 
 ## Scenario 4
-This one is somewhat challenging. Integration is added to AltitudeControl() to save the right, red, heavier quadcopter from crashing. To make them move fast, then slow down nicely and hover on top of their targets, I made tradeoffs among P (present), I (past), D (future), and a bunch of parameters. Finally I saw the green box appear.
+This one is somewhat challenging. Integration is added to AltitudeControl() to save the right, red, heavier quadcopter from crash. To make them move fast, then slow down nicely and hover on top of their targets, I made tradeoffs among P (present), I (past), D (future), and a bunch of parameters. Finally I saw the green box appear.
 
 ## Scenario 5
 This one is also a little tricky. In early runs, the left, orange drone took off, half way turned sharply, and crashed. I traced steps in debugger of Microsoft Visual Studio, but it was hard to find the point or function it went wrong. Then I began to try various parameters. When I decrease maxSpeedXY and maxHorizAccel to reduce the chance of abrupt turns, it works. The left, orange quadcopter flies smoothly following the orange moving marble in figure 8 closely within 0.5m. The right, red quadcopter flies and keeps distance within 1.5m from its moving target.
