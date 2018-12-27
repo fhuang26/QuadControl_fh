@@ -1,8 +1,8 @@
 # QuadControl_fh
 The following 3 files are modified for Project 3: Control of a 3D Quadrotor.
-** src/QuadControl.cpp
-** src/QuadControl.h
-** config/QuadControlParams.txt
+* src/QuadControl.cpp
+* src/QuadControl.h
+* config/QuadControlParams.txt
 
 It passed all test cases in scenarios 2, 3, 4, and 5. A green box appears on each test case. A video, 3D_hub Control_Quadcopter.gif, is recorded about these scenarios and uploaded to this github repo.
 
